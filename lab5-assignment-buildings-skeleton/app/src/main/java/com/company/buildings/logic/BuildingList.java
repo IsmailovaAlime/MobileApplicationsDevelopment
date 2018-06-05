@@ -51,7 +51,7 @@ public class BuildingList {
     public House[] getHouses() {
         return mHouse;
     }
-	
+
     /**
      * Return the array of offices.
      */

@@ -12,6 +12,21 @@ import com.company.buildings.ui.OutputInterface;
  */
 public final class Neighborhood {
 
-    // TODO - Put your code here.
-    
-}
+        // TODO - Put your code here.
+        public  static void print(Building[] buildings, String header, OutputInterface out){
+            for(int i = buildings.length-1; i != 0; i--)
+            {
+                out.println(buildings[i].toString());
+            }
+        }
+
+        public static int  calcArea(Building[] buildings){
+            int p = 0;
+            for(int i = buildings.length-1; i >= 0 ; i--){
+                p+=buildings[i].calcLotArea();
+            }
+            return p;
+        }
+
+
+    }
